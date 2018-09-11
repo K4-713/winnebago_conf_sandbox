@@ -1,0 +1,25 @@
+# These are automagically loaded
+access_key = "Access Key"
+secret_key = "Secret Key"
+region = "region you want"
+
+# Putting these in checked-in code could tell people where you are: amis are 
+# region-specific
+instance_ami = "ami-whatever"
+
+# Eventually, the URLs that are going to get served out of the test and prod
+# buckets. Should be real.
+test_domain = "test.yourdomain.com"
+prod_domain = "yourdomain.com"
+
+# ARN for the deployers user group you already created in AWS.
+deployers_group_arn = "ARN value from AWS console for now"
+
+# Username and public key for a deployer.
+# This should change into a map at some point, so you can have more than
+# one deployer.
+deployer_username = "Deployer_username"
+deployer_key = "ssh-rsa blah blah blah etc"
+
+# S3 buckets need universally unique names. Good luck.
+s3_prefix = "distinctive-nonsense-particular-to-you"
