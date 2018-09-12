@@ -1,12 +1,12 @@
 # winnebago_conf_sandbox
 Screwing around with terraform and aws
-=====
 
 These scripts are run in terraform locally: 
 See https://www.terraform.io/intro/getting-started/install.html
 
 ## The Show So Far:
-* Spins up a deploy box and allows a deploy user to ssh into it.
+* Spins up a deploy box, installs the aws client,
+and sets up a a deploy user with the ability to ssh into the deploy box.
 * Spins up four s3 buckets that will eventually be useful.
 
 Reminder:
@@ -24,6 +24,8 @@ before this will work. This is most simply achieved by renaming the included
 
 ## TODO next:
 * Allow the deploy user to alter S3 files from the deploy server.
+https://docs.aws.amazon.com/cli/latest/reference/s3/sync.html
+
 
 ## Eventual goals:
 * Approved deployers should be a list or map on this end

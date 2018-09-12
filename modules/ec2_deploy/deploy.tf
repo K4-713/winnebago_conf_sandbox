@@ -31,7 +31,11 @@ create_user() {
 
 create_user '${var.deployer_username}' "${var.deployer_key}"
 
+sudo apt-get update
+sudo apt-get --assume-yes install awscli
+
 /sbin/service sshd restart
+
 
 USERDATA
 }
